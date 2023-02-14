@@ -2,8 +2,6 @@ import Image from 'next/image'
 import React from 'react'
 
 const Weather = ({ data }) => {
-  console.log(data)
-  console.log(data.dt)
   const windSpeed = ((data.wind.speed * 1000) / 3600).toFixed(2)
   const date = new Date(data.dt * 1000)
   const convertedDate = date.toLocaleDateString('fa-IR')

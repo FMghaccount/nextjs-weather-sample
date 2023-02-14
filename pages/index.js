@@ -13,7 +13,6 @@ export default function Home() {
   const [weather, setWeather] = useState({});
   const [loading, setLoading] = useState(false);
   const debouncedSearchValue = useDebounce(city, 0);
-  console.log(debouncedSearchValue);
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${debouncedSearchValue}&units=metric&lang=fa&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`;
 

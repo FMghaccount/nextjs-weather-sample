@@ -1,0 +1,22 @@
+@tailwind base;
+@layer base {
+  @font-face {
+    font-family: 'iranyekan';
+    src: url('../assets/fonts/iranyekan/weight-400/iranyekanwebregularfanum.eot');
+    src: url('../assets/fonts/iranyekan/weight-400/iranyekanwebregularfanum.eot?#iefix')
+        format('embedded-opentype'),
+      url('../assets/fonts/iranyekan/weight-400/iranyekanwebregularfanum.ttf')
+        format('woff'),
+      url('../assets/fonts/iranyekan/weight-400/iranyekanwebregularfanum.woff')
+        format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  html {
+    font-family: 'iranyekan' !important;
+    overflow-y: hidden; 
+  }
+}
+@tailwind components;
+@tailwind utilities;
